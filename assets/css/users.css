@@ -1,0 +1,104 @@
+.user-types .card-user {
+    border: none;
+    z-index: 10;
+    background-color: #00000086;
+    width: 100%;
+    height: 100%;
+}
+
+.user-types hr {
+    color: white;
+}
+
+.user-types .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.user-types ul li {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.user-types h6 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.user-types .text-muted {
+    opacity: 0.7;
+}
+
+.user-types .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .user-types .video-wrapper:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .user-types .video-wrapper:hover .btn {
+        opacity: 1;
+    }
+}
+
+.user-types video {
+    /** Simulationg background-size: cover */
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border: none;
+}
+
+.user-types .video-wrapper {
+    /* Telling our absolute positioned video to
+    be relative to this element */
+    position: relative;
+
+    /* Will not allow the video to overflow the
+    container */
+    overflow: hidden;
+
+    /* Centering the container's content vertically
+    and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s;
+
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .disable-window-mobile.cool-window {
+        background: unset;
+        /*standard win 98 vibe: border-radius: 4px;*/
+        border-radius: 0;
+    }
+    .disable-window-mobile.windowOnHover:hover, .disable-window-mobile.windowOnHover:focus-within  {
+        box-shadow: unset;
+    }
+
+}
